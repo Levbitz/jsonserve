@@ -4,7 +4,8 @@ const searchForm = document.querySelector(".search");
 
 const renderPosts = async (term) => {
   console.log(term);
-  let uri = "https://github.com/Levbitz/jsonserve/blob/main/data/db.json";
+  let uri =
+    "https://github.com/Levbitz/jsonserve/blob/main/data/db.json/posts?_sort=likes&_order=desc";
   if (term) {
     uri += `&q=${term}`;
   }
